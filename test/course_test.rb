@@ -15,7 +15,7 @@ class CourseTest < MiniTest::Test
     assert_instance_of Course, @course
   end
 
-  def test_it_exists
+  def test_it_has_attributes
     assert_equal "Calculus", @course.name
     assert_equal 2, @course.capacity
   end
