@@ -9,7 +9,7 @@ class StudentTest < MiniTest::Test
   end
 
   def test_it_exists
-    assert_instance_of Student, student
+    assert_instance_of Student, @student
   end
 
   def test_it_has_attributes
