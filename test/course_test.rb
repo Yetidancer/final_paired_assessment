@@ -28,4 +28,14 @@ class CourseTest < MiniTest::Test
     assert_equal false, @course.full?
   end
 
+  def test_it_can_enroll_students
+    @course.enroll(@student1)
+
+    assert_equal false, @course.full?
+
+    @course.enroll(@student2)
+
+    assert_equal true, @course.full?
+  end
+
 end
