@@ -18,5 +18,7 @@ class StudentTest < MiniTest::Test
     assert_equal 21, @student.age
   end
 
-
+  def test_student_score_starts_as_an_empty_array
+    assert_equal [], @student.scores
+  end
 end
