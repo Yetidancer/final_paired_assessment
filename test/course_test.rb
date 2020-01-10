@@ -20,4 +20,8 @@ class CourseTest < MiniTest::Test
     assert_equal 2, @course.capacity
   end
 
+  def test_course_students_starts_as_an_empty_array
+    assert_equal [], @course.students
+  end
+
 end
