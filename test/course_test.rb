@@ -24,4 +24,8 @@ class CourseTest < MiniTest::Test
     assert_equal [], @course.students
   end
 
+  def test_can_check_if_course_is_full
+    assert_equal false, @course.full?
+  end
+
 end
